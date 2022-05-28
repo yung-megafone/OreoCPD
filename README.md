@@ -10,8 +10,7 @@ This program is built around the following hardware
 - lots and lots of wiring
 - The modules in my specific car though with manipulation, it'll work with almost anything as a control panel
 
-Under the main repo you will find the original program files
-Under the OreoCPD directory you will find the updated code for version 1A
+Under the main repo you will find folders contraining different versions of this program
 
 Rason I am including the previous and new versions is in case something doesn't work or I want to do something funky
 Never know when you'll need to view the beginning of a project to figure out wth is going on

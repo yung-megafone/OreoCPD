@@ -1,0 +1,46 @@
+# OreoCPD
+Central Power Distribution Controller for Crown Vic Equipment Console
+Property REDLINE TECHNOLOGY LLC
+
+change.log
+-------------------
+20220527 Version 1A
+Changes:
+--------
+    - Split the program code into smaller, easier-to-read modules
+        -- [programs] module added for easier addition of future profiles and presets
+        -- [devices] module added to easily add and remove modules from OreoCPD
+
+    - Changed cleaned the putput up (implimented the \n feature in python prints)
+
+    - Added some detailed notes for easier understanding of what's going on
+
+ToDo:
+
+    - Work on the GUI 
+
+    - Add some more presets and a preset generation method
+
+    - What isn't there to do haha
+
+------------------
+20220424 Version 1
+Changes:
+--------
+
+    - Basic operation of program Completed
+    
+    - All relays function as intended and error handling is remarkably good
+    
+    - Some basic presets are made, more to be featured
+    
+
+ToDo:
+
+    - Beautify the gui and move away from a shell-based Interface
+        
+    - Design a preset-saving system for custom presets
+    
+    - Clean up the code (this is my first big program, dont judge lol)
+    
+    - Some other stuff that I probably forgot but will remember as soon as i lay down

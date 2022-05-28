@@ -1,0 +1,26 @@
+# OreoCPD
+Central Power Distribution Controller for Crown Vic Equipment Console
+Property REDLINE TECHNOLOGY LLC
+changelog.txt
+
+
+OreoCPD Version 1.0 - 20220424
+
+    Basic operation of program Completed
+    
+    All relays function as intended and error handling is remarkably good
+    
+    some basic presets are made, more to be featured
+    
+
+ToDo:
+
+    Beautify the gui and move away from a shell-based Interface
+    
+    improve the efficiency and add further error handling
+    
+    design a preset-saving system for custom presets
+    
+    clean up the code (this is my first big program, dont judge lol)
+    
+    some other stuff that I probably forgot but will remember as soon as i lay down

@@ -68,13 +68,13 @@ def demo():
 
 def all_off():
     print("Shutting everything down...\n")
-    toggle.sub_off
-    toggle.acc_off
-    toggle.inv_off
-    toggle.rad_off
-    toggle.lig_off
-    toggle.com_off
-    toggle.sir_off
-    toggle.nul_off
+    toggle.sub_off()
+    toggle.acc_off()
+    toggle.inv_off()
+    toggle.rad_off()
+    toggle.lig_off()
+    toggle.com_off()
+    toggle.sir_off()
+    toggle.nul_off()
     time.sleep(1)
     print("All devices are disabled...")

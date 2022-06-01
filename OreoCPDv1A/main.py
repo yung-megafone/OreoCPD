@@ -8,7 +8,6 @@
                                     ##########   Setup   ##########
                             ############     General Setup     ############
 import time
-from turtle import clear
 import RPi.GPIO as GPIO
 from tqdm import tqdm , trange
 from tqdm.notebook import tqdm_notebook

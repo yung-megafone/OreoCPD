@@ -31,7 +31,7 @@ def main():
     option = 0 # set the input variable 'option' to 0
         ### Loop thru the menu items and when one is selected, execute the underlying commands. Otherwise restart the program with an error message
     while 1:
-        print(" [1] Demo\n\n [2] Default\n\n [3] Daily\n\n [4] Dark Car\n\n ")
+        print(" [1] Demo\n\n [2] Default\n\n [3] Daily\n\n [4] Dark Car\n\n [5] All Off")
         print("")
         option = int(input("Please enter selection:  "))
 

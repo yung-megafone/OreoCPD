@@ -8,7 +8,6 @@
                                     ##########   Setup   ##########
                             ############     General Setup     ############
 import time
-from turtle import clear
 import RPi.GPIO as GPIO
 from tqdm import tqdm , trange
 from tqdm.notebook import tqdm_notebook
@@ -34,7 +33,7 @@ def main():
     clear_screen()
     option = 0 # set the input variable 'option' to 0
         ### Loop thru the menu items and when one is selected, execute the underlying commands. Otherwise restart the program with an error message
-    while option is not 1:
+    while option != 1:
         print("Menu\n")
         print(" [1] Quit\n\n [2] Demo\n\n [3] Default\n\n [4] Daily\n\n [5] Stealth\n\n [6] Disable\n\n" )
         print(f'The currently selected profile is {profile}')

@@ -52,7 +52,6 @@ def daily_driver():
 
 
 def demo():
-
     ## Show some cool stuff this app can do ##
     print("Demo Profile Selected \n")
     toggle.sub_on()

@@ -8,6 +8,7 @@
                                     ##########   Setup   ##########
                             ############     General Setup     ############
 import time
+from turtle import clear
 import RPi.GPIO as GPIO
 from tqdm import tqdm , trange
 from tqdm.notebook import tqdm_notebook
@@ -27,7 +28,7 @@ def clear_screen():
 ###     Menu and Program     ###
     ### Providing an alternate loopback point to not reset modules on bad input ###
 
-profile = ""
+profile = ""    # Store the name of the currently selected profile
 
 def main():
     clear_screen()
@@ -36,11 +37,12 @@ def main():
     while option != 1:
         print("Menu\n")
         print(" [1] Quit\n\n [2] Demo\n\n [3] Default\n\n [4] Daily\n\n [5] Stealth\n\n [6] Disable\n\n" )
-        print(f'The currently selected profile is {program.profile}')
+        print(f'The currently selected profile is {profile}')
         print("")
         option = int(input("Please enter selection:  "))
 
         if option == 2: # demo #
+            profile = "Demo"
             clear_screen()
             program.demo()
             # sleep to ensure all relays are switched and devices are recieving power before continuing
@@ -48,30 +50,35 @@ def main():
 
 
         elif option == 3:   # defualt #
+            profile = "Default"
             clear_screen()
             program.default()
             time.sleep(2)
 
 
         elif option == 4:   # daily #
+            profile = "Daily"
             clear_screen()
             program.daily_driver()
             time.sleep(2)
 
 
         elif option == 5:   # stealth #
+            profile = "Stealth"
             clear_screen()
             program.dark_car()
             time.sleep(2)
 
 
         elif option == 6:   # poweroff #
+            profile = "Disabled"
             clear_screen()
             program.all_off()
             time.sleep(2)
 
         
         elif option == 7:   # popo #
+            profile = "Popo"
             clear_screen()
             program.popo()
             time.sleep(2)

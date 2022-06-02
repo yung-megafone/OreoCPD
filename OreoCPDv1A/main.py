@@ -36,7 +36,7 @@ def main():
     while option != 1:
         print("Menu\n")
         print(" [1] Quit\n\n [2] Demo\n\n [3] Default\n\n [4] Daily\n\n [5] Stealth\n\n [6] Disable\n\n" )
-        print(f'The currently selected profile is {profile}')
+        print(f'The currently selected profile is {program.profile}')
         print("")
         option = int(input("Please enter selection:  "))
 

@@ -64,7 +64,7 @@ def main():
 
 
         elif option == 5:   # stealth #
-            profile = "Stealth"
+            profile = "Dark Car"
             clear_screen()
             program.dark_car()
             time.sleep(2)

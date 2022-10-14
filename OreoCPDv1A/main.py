@@ -99,6 +99,7 @@ def main():
         main()    
 
 def oreocpd():
+    global profile
     print("System Starting()")
     print("")
     profile = "ready."

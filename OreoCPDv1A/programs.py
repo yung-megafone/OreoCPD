@@ -8,7 +8,7 @@ import time
 
 #   Startup loop enables all devices by default... If no means to control the system are avalible, everything stays on, it's amazing!
 def default():
-    profile = "Default"
+    profile = "set to default."
     print("Default Profile Selected \n")
     toggle.sub_on()
     toggle.acc_on()
@@ -24,7 +24,7 @@ def default():
 
 #   Dark Car Preset allows Subwoofer to be active while not allowing power to light emiting devices
 def dark_car():
-    profile = "Dark Car"
+    profile = "in dark mode."
     print("Dark Car Profile Selected \n")
     toggle.sub_on()
     toggle.acc_off()
@@ -40,7 +40,7 @@ def dark_car():
 
 #  Daily Driver preset enables subs, accessory poerts, and radar detector
 def daily_driver():
-    profile = "Daily"
+    profile = "in daily mode."
     print("Daily Driver Profile Selected \n")
     toggle.sub_on()
     toggle.acc_on()
@@ -56,7 +56,7 @@ def daily_driver():
 
 #   Popo mode enables the lights and sirens!
 def dark_car():
-    profile = "Popo"
+    profile = "in popo mode."
     print("Popo Profile Selected \n")
     toggle.sub_on()
     toggle.acc_on()
@@ -72,7 +72,7 @@ def dark_car():
 
 def demo():
     ## Show some cool stuff this app can do ##
-    profile = "Demo"
+    profile = "in demo mode."
     print("Demo Profile Selected \n")
     toggle.sub_on()
     time.sleep(1)
@@ -104,7 +104,7 @@ def demo():
     
 
 def all_off():
-    profile = "Shutdown"
+    profile = "off."
     print("Shutting everything down...\n")
     toggle.sub_off()
     toggle.acc_off()
@@ -116,3 +116,17 @@ def all_off():
     toggle.nul_off()
     time.sleep(1)
     print("All devices are disabled...")
+    
+def standby():
+    profile = "in standby."
+    print("Initializing devices...\n")
+    toggle.sub_off()
+    toggle.acc_off()
+    toggle.inv_off()
+    toggle.rad_off()
+    toggle.lig_off()
+    toggle.com_off()
+    toggle.sir_off()
+    toggle.nul_off()
+    time.sleep(1)
+    print("All devices are in standby...")

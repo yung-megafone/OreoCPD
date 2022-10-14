@@ -88,6 +88,7 @@ def main():
             ###     End the program    ###
         elif option == 1:
             print("Please make sure to disable the main power switch before parking for long periods of time!")
+            program.all_off()
             time.sleep(2)
             print("\nGoodbye!")
             time.sleep(3)
@@ -100,7 +101,7 @@ def main():
 def oreocpd():
     print("System Starting()")
     print("")
-    program.default() # load the default profile
+    program.standby() # load the default profile
     time.sleep(1)
     main()
 

@@ -52,6 +52,22 @@ def daily_driver():
     toggle.nul_off()
     time.sleep(1)
     print("Daily Driver Profile Loaded \n")
+    
+
+#   Popo mode enables the lights and sirens!
+def dark_car():
+    profile = "Popo"
+    print("Popo Profile Selected \n")
+    toggle.sub_on()
+    toggle.acc_on()
+    toggle.inv_on()
+    toggle.rad_on()
+    toggle.lig_on()
+    toggle.com_on()
+    toggle.sir_on()
+    toggle.nul_off()
+    time.sleep(1)
+    print('Popo Profile Loaded \n')
 
 
 def demo():

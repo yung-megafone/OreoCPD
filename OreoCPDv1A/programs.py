@@ -55,7 +55,7 @@ def daily_driver():
     
 
 #   Popo mode enables the lights and sirens!
-def dark_car():
+def popo():
     profile = "in popo mode."
     print("Popo Profile Selected \n")
     toggle.sub_on()

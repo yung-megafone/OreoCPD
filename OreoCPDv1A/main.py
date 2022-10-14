@@ -101,6 +101,7 @@ def main():
 def oreocpd():
     print("System Starting()")
     print("")
+    profile = "ready."
     program.standby() # load the default profile
     time.sleep(1)
     main()

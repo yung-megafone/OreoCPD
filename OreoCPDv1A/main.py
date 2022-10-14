@@ -90,6 +90,7 @@ def main():
             print("Please make sure to disable the main power switch before parking for long periods of time!")
             program.all_off()
             time.sleep(2)
+            GPIO.cleanup()
             print("\nGoodbye!")
             time.sleep(3)
             quit()
@@ -108,6 +109,3 @@ def oreocpd():
     main()
 
 oreocpd()
-
-
-GPIO.cleanup()

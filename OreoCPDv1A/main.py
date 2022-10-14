@@ -31,18 +31,19 @@ def clear_screen():
 profile = ""    # Store the name of the currently selected profile
 
 def main():
+    global profile
     clear_screen()
     option = 0 # set the input variable 'option' to 0
         ### Loop thru the menu items and when one is selected, execute the underlying commands. Otherwise restart the program with an error message
     while option != 1:
         print("Menu\n")
         print(" [1] Quit\n\n [2] Demo\n\n [3] Default\n\n [4] Daily\n\n [5] Stealth\n\n [6] Disable\n\n" )
-        print(f'The currently selected profile is {profile}')
+        print(f'The system is {profile}')
         print("")
         option = int(input("Please enter selection:  "))
 
         if option == 2: # demo #
-            profile = "Demo"
+            profile = "in demo mode."
             clear_screen()
             program.demo()
             # sleep to ensure all relays are switched and devices are recieving power before continuing
@@ -50,35 +51,35 @@ def main():
 
 
         elif option == 3:   # defualt #
-            profile = "Default"
+            profile = "set to defaults."
             clear_screen()
             program.default()
             time.sleep(2)
 
 
         elif option == 4:   # daily #
-            profile = "Daily"
+            profile = "in daily mode."
             clear_screen()
             program.daily_driver()
             time.sleep(2)
 
 
         elif option == 5:   # stealth #
-            profile = "Dark Car"
+            profile = "in dark mode."
             clear_screen()
             program.dark_car()
             time.sleep(2)
 
 
         elif option == 6:   # poweroff #
-            profile = "Disabled"
+            profile = "in standby."
             clear_screen()
             program.all_off()
             time.sleep(2)
 
         
         elif option == 7:   # popo #
-            profile = "Popo"
+            profile = "in popo mode."
             clear_screen()
             program.popo()
             time.sleep(2)
@@ -90,8 +91,8 @@ def main():
             time.sleep(2)
             print("\nGoodbye!")
             time.sleep(3)
+            quit()
             ###### Invalid input handler allows user to try another input #####
-
         print("input invalid!")
         print("##############")
         main()    

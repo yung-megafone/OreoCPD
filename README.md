@@ -1,18 +1,8 @@
 # OreoCPD
 Central Power Distribution Controller for Crown Vic Equiptment Console
 
-This program is built around the following hardware
-- Raspberry Pi B+ as the computer
-- 5V relays (120v max)
-- Node MCU as the router
-- lots and lots of wiring
-- The modules in my specific car though with manipulation, it'll work with almost anything as a control panel
+By powering devices off when they aren't being used, you will reduce the load on your vehicle's engine. Not only will this make your car run faster, but you'll save money in the form of improved fuel economy!*
 
-Under the main repo you will find folders contraining different versions of this program
+This device also makes parking your car much easier, If you are like me and run a lot of electronics- rather than unplugging everything and risking a broken connector each time you park, simply press a button and everything goes dark!
 
 
-Once I figure the kinks out and get the nodemcu running as a proper AP, I will post images of everything.
-
-Pull the code, change it, make it better! Thats why we're here right? ;)
-
-plus im reaaaaaaly tired and don't even wanna make a readme.md lol
